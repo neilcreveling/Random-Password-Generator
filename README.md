@@ -7,6 +7,8 @@ When users have access to sensitive data, strong passwords are essential for opt
 
 ## Application
 
+[Random Number Generator Link](https://neilcreveling.github.io/Random-Password-Generator/)
+
 Upon opening the link, the user is presented with a text box with placeholder text and a button labeled "Generate Password".
 
 
