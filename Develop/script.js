@@ -19,8 +19,16 @@ funtion generatePassword() {
   // create if statement for situation where characters entered into promptLength are less than 8 or greater than 128 //
   if (promptLength < 8 || promptLength > 128) {
       alert("Please choose a password length between 8 and 128 characters.");
+      // create tryAgain option if promptlength selection is too large or small //
+      var tryAgain = confirm("Would you like to try again?");
+      if (tryAgain) {
+        generatePassword();
+      } else {
+        return ("");
+      }
+    }
   }
-}
+
 
 
 
