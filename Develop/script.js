@@ -12,6 +12,10 @@ funtion generatePassword() {
   var password = []  
   // set var promptLength to window prompt //
   var promptLength = window.prompt("How long would you like your password to be? Please enter a number between 8 and 128");
+  // create if statement for situation where no characters are entered into promptLength prompt //
+  if (!promptLength) {
+      return ("");
+  }
 }
 
 
