@@ -7,15 +7,15 @@ var specialCharacters = "!()?[]`~;:!@#$%^&*+=";
 
 // generatePassword function start //
 
-funtion generatePassword() {
+function generatePassword() {
   // set var password to be an empty array //
-  var password = []  
+  var password = [];  
   // set var promptLength to window prompt //
   var promptLength = window.prompt("How long would you like your password to be? Please enter a number between 8 and 128");
     // create if statement for situation where no characters are entered into promptLength prompt //
     if (!promptLength) {
         return ("");
-    }
+    };
     // create if statement for situation where characters entered into promptLength are less than 8 or greater than 128 //
     if (promptLength < 8 || promptLength > 128) {
       alert("Please choose a password length between 8 and 128 characters.");
@@ -26,7 +26,7 @@ funtion generatePassword() {
       } else {
         return ("");
       }
-    }
+    };
     // create if statement for situation where characters entered in promptLength are not numerical //
     if (isNaN(parseInt(promptLength))) {
       alert("Please only enter a numerical value.");
@@ -37,7 +37,7 @@ funtion generatePassword() {
       } else {
         return ("");  
       }   
-    }  
+    };  
   
   console.log(promptLength)
 
@@ -52,19 +52,20 @@ funtion generatePassword() {
   console.log(choiceSpecial)  
 
   // create var promptChoices, create if statements that define promptChoices to character var based on responses to confirm var //
+  // changed = to += , better semantics //
   var promptChoices = "";
  
     if (choiceLowercase) {
         promptChoices = lowercase;
     };
     if (choiceUppercase) {
-        promptChoices = promptChoices + uppercase
+        promptChoices += uppercase
     };
     if (choiceNumber) {
-        promptChoices = promptChoices + numbers
+        promptChoices += numbers
     };
     if (choiceSpecial) {
-        promptChoices = promptChoices + specialCharacters
+        promptChoices += specialCharacters
     };
 
     // create loop that selects promptLength number of random promptChoice defined character types //
@@ -72,27 +73,15 @@ funtion generatePassword() {
         password += promptChoices[Math.floor(Math.random() * promptChoices.length)];
     };
 
-// return generated password
-return password;
+  // return generated password //
+  return password;
 
 };
 
-
-
-
-
-
-
-
-
-// Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+    var password = generatePassword()
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
+  };
+  
+generateBtn.addEventListener("click", writePassword)
