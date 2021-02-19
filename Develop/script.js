@@ -27,7 +27,11 @@ funtion generatePassword() {
         return ("");
       }
     }
-  }
+  //create if statement for situation where characters entered in promptLength are not numerical //
+  if (isNaN(parseInt(promptLength))) {
+      alert("Please only enter a numerical value.")
+  }  
+}
 
 
 
