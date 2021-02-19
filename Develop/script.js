@@ -5,6 +5,19 @@ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "1234567890";
 var specialCharacters = "!()?[]`~;:!@#$%^&*+=";
 
+// generatePassword function start
+
+funtion generatePassword() {
+    
+}
+
+
+
+
+
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
