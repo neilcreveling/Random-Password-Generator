@@ -2,10 +2,10 @@
 Generates a random password based on chosen criteria.
 
 
-https://github.com/neilcreveling/Random-Password-Generator/Images/Generator-initial.png
+![Generator Initial](https://github.com/neilcreveling/main/Random-Password-Generator/Images/Generator-initial.png)
 
-https://github.com/neilcreveling/Random-Password-Generator/Images/Generator-number.png
+![Generator Number Prompt](https://github.com/neilcreveling/main/Random-Password-Generator/Images/Generator-number.png)
 
-https://github.com/neilcreveling/Random-Password-Generator/Images/Generator-character.png
+![Generator Character Confirm](https://github.com/neilcreveling/main/Random-Password-Generator/Images/Generator-character.png)
 
-https://github.com/neilcreveling/Random-Password-Generator/Images/Generator-result.png
+![Generator Result](https://github.com/neilcreveling/main/Random-Password-Generator/Images/Generator-result.png)
