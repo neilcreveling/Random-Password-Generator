@@ -8,8 +8,10 @@ var specialCharacters = "!()?[]`~;:!@#$%^&*+=";
 // generatePassword function start //
 
 funtion generatePassword() {
-    // set var password to be an empty array //
+  // set var password to be an empty array //
   var password = []  
+  // set var promptLength to window prompt //
+  var promptLength = window.prompt("How long would you like your password to be? Please enter a number between 8 and 128");
 }
 
 
