@@ -5,10 +5,11 @@ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "1234567890";
 var specialCharacters = "!()?[]`~;:!@#$%^&*+=";
 
-// generatePassword function start
+// generatePassword function start //
 
 funtion generatePassword() {
-    
+    // set var password to be an empty array //
+  var password = []  
 }
 
 
