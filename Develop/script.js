@@ -18,18 +18,25 @@ funtion generatePassword() {
   }
   // create if statement for situation where characters entered into promptLength are less than 8 or greater than 128 //
   if (promptLength < 8 || promptLength > 128) {
-      alert("Please choose a password length between 8 and 128 characters.");
-      // create tryAgain option if promptlength selection is too large or small //
-      var tryAgain = confirm("Would you like to try again?");
-      if (tryAgain) {
-        generatePassword();
-      } else {
-        return ("");
-      }
+    alert("Please choose a password length between 8 and 128 characters.");
+    // create tryAgain option if promptlength selection is too large or small //
+    var tryAgain = confirm("Would you like to try again?");
+    if (tryAgain) {
+      generatePassword();
+    } else {
+      return ("");
     }
-  //create if statement for situation where characters entered in promptLength are not numerical //
+  }
+  // create if statement for situation where characters entered in promptLength are not numerical //
   if (isNaN(parseInt(promptLength))) {
-      alert("Please only enter a numerical value.")
+    alert("Please only enter a numerical value.");
+    // create tryAgain option if promptLength selection is not a numerical value //
+    var tryAgain = confirm("Would you like to try again?");
+    if (tryAgain) {
+      generatePassword();
+    } else {
+      return ("");  
+    }   
   }  
 }
 
