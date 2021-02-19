@@ -40,7 +40,7 @@ funtion generatePassword() {
     }  
   
   console.log(promptLength)
-  
+
   // create variables that are confirms for each type of character type criteria //
   var choiceLowercase = window.confirm("Would you like to include lowercase letters?");
   console.log(choiceLowercase)
@@ -66,6 +66,11 @@ funtion generatePassword() {
     if (choiceSpecial) {
         promptChoices = promptChoices + specialCharacters
     };
+
+    // create loop that selects promptLength number of random promptChoice defined character types //
+    for (var i=0; i < promptLength; i++) {
+        password += promptChoices[Math.floor(Math.random() * promptChoices.length)];
+    }
 }
 
 
