@@ -38,6 +38,9 @@ funtion generatePassword() {
         return ("");  
       }   
     }  
+  
+  console.log(promptLength)
+  
   // create variables that are confirms for each type of character type criteria //
   var choiceLowercase = window.confirm("Would you like to include lowercase letters?");
   console.log(choiceLowercase)
@@ -47,6 +50,22 @@ funtion generatePassword() {
   console.log(choiceNumber)
   var choiceSpecial = window.confirm("Would you like to include special characters?");
   console.log(choiceSpecial)  
+
+  // create var promptChoices, create if statements that define promptChoices to character var based on responses to confirm var //
+  var promptChoices = "";
+ 
+    if (choiceLowercase) {
+        promptChoices = lowercase;
+    };
+    if (choiceUppercase) {
+        promptChoices = promptChoices + uppercase
+    };
+    if (choiceNumber) {
+        promptChoices = promptChoices + numbers
+    };
+    if (choiceSpecial) {
+        promptChoices = promptChoices + specialCharacters
+    };
 }
 
 
