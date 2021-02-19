@@ -70,8 +70,12 @@ funtion generatePassword() {
     // create loop that selects promptLength number of random promptChoice defined character types //
     for (var i=0; i < promptLength; i++) {
         password += promptChoices[Math.floor(Math.random() * promptChoices.length)];
-    }
-}
+    };
+
+// return generated password
+return password;
+
+};
 
 
 
